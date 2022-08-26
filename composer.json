@@ -6,8 +6,12 @@
     "license": "MIT",
     "repositories": [
         {
-            "type": "vcs",
-            "url": "https://github.com/sakhawathossensadi/blog-api.git"
+            "type": "path",
+            "url": "./../blog-packages/auth"
+        },
+        {
+            "type": "path",
+            "url": "./../blog-packages/blog-api"
         }
     ],
     "require": {
@@ -16,6 +20,7 @@
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
+        "pathshala/auth": "dev-develop",
         "blog/blog": "dev-develop"
     },
     "require-dev": {
