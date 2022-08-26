@@ -4,16 +4,23 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d71e7e90a02ff1a3ec26ccf62244466f",
+    "content-hash": "1c6a026c8b1c9252a5ed4ddc281b9f6d",
     "packages": [
         {
             "name": "blog/blog",
             "version": "dev-develop",
-            "dist": {
-                "type": "path",
-                "url": "./../blog-packages/blog-api",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sakhawathossensadi/blog-api.git",
                 "reference": "39d90685a7c2056dc21bc2d0f57ac85c3318d3a4"
             },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sakhawathossensadi/blog-api/zipball/39d90685a7c2056dc21bc2d0f57ac85c3318d3a4",
+                "reference": "39d90685a7c2056dc21bc2d0f57ac85c3318d3a4",
+                "shasum": ""
+            },
+            "default-branch": true,
             "type": "laravel-package",
             "extra": {
                 "laravel": {
@@ -39,9 +46,11 @@
                 }
             ],
             "description": "Blog package",
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "source": "https://github.com/sakhawathossensadi/blog-api/tree/develop",
+                "issues": "https://github.com/sakhawathossensadi/blog-api/issues"
+            },
+            "time": "2022-08-26T04:59:29+00:00"
         },
         {
             "name": "brick/math",
