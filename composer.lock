@@ -4,8 +4,45 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccbd816a07b206f971042295b899d1ba",
+    "content-hash": "d71e7e90a02ff1a3ec26ccf62244466f",
     "packages": [
+        {
+            "name": "blog/blog",
+            "version": "dev-develop",
+            "dist": {
+                "type": "path",
+                "url": "./../blog-packages/blog-api",
+                "reference": "39d90685a7c2056dc21bc2d0f57ac85c3318d3a4"
+            },
+            "type": "laravel-package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Blog\\Blog\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Blog\\Blog\\": "src/",
+                    "Blog\\Blog\\Database\\Factories\\": "database/factories/",
+                    "Blog\\Blog\\Database\\Seeders\\": "database/seeders/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "sakhawathossensadi",
+                    "email": "newtonss919@gmail.com"
+                }
+            ],
+            "description": "Blog package",
+            "transport-options": {
+                "relative": true
+            }
+        },
         {
             "name": "brick/math",
             "version": "0.10.2",
@@ -7684,7 +7721,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "blog/blog": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
