@@ -12,6 +12,10 @@ if ([ ! -d "blog-api" ]) then
     git clone https://github.com/sakhawathossensadi/blog-api.git
     status 'blog-api package is cloned'
 fi
+if ([ ! -d "auth-api" ]) then
+    git clone https://github.com/sakhawathossensadi/auth.git
+    status 'auth-api package is cloned'
+fi
 status "Packages cloning is completed"
 # status "Switching to project directory $PROJECT_DIRECTORY"
 cd $PROJECT_DIRECTORY
